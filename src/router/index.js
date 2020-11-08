@@ -46,7 +46,8 @@ const routes = [
   {
     path: '/administrador/:dato',
     name: 'Administrador',
-    component: () => import('../views/Administrador.vue')
+    component: () => import('../views/Administrador.vue'),
+    props: true,
   },
 ]
 

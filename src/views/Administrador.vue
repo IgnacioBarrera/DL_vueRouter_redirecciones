@@ -31,14 +31,15 @@
 <script>
 export default {
     name: 'Administrador',
+    props: ["dato"],
     methods: {
         ingreso(){
-            if (this.$route.params.dato == 'simple') {
+            if (this.dato == 'simple') {
                 return 'Bienvenido a la página de Administración.'
-            } else if (this.$route.params.dato == 'avanzado') {
+            } else if (this.dato == 'avanzado') {
                 return 'Esta página de administración está en construcción. Intente como administrador simple.'
             } else {
-                return 'Dirección ingresada no es correcta. Intente como administrador simple.'
+                return 'Dirección de administración ingresada no es correcta. Intente como administrador simple.'
             }
         }
     },  
